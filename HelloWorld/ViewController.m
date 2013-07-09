@@ -14,10 +14,17 @@
 
 @implementation ViewController
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+NSString *string1 = @"Xin chao ";
+-(IBAction) changeTheTextOfhello
+{
+    hello.text = [string1 stringByAppendingString: name.text];
 }
 
 - (void)didReceiveMemoryWarning
@@ -26,4 +33,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) viewDidUnload
+{
+    [super viewDidUnload];
+}
+
+
 @end
+   
